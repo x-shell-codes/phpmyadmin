@@ -4,7 +4,6 @@ Vagrant.configure("2") do |config|
 	# Port forwarding
 	config.vm.network 'forwarded_port', guest: 80, host: 80
 
-
 	config.vm.provider "virtualbox" do |vb|
 		vb.name = "phpmyadmin.local.x-shell.codes"
 		vb.cpus = 1
